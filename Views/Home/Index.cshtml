@@ -2,65 +2,100 @@
     ViewData["Title"] = "Home Page";
 }
 
-<br />
+@*<header class="masthead">
+    <div class="container-fluid text-white">
+        <div class="row g-0">
+            <div class="text-center" id="intro">
+            <h1 class="display-5">Your digital presence is your calling card</h1>
+            <br />
+            <h4>Proudly Servicing Central Florida</h4>
+            <br />
+            <p>Great digital media brings prospective renters and buyers directly to you. We understand this, which is why we use the highest quality cameras, retouching, and marketing-informed content for every project — no matter what. Led by award-winning digital media specialist Heaven Keller, Heaven's Lens finds success by helping you sell your listings more quickly, and for a higher price tag.</p>
+            <br />
+            <button type="button" class="btn btn-light btn-lg">Book Now</button>
+            <button type="button" class="btn btn-light btn-lg">Pricing & Services</button>
+        </div>
+        </div>
+    </div>
+</header>
+*@
 
-<div class="text-center" id="intro">
-    <h1 class="display-5">Your digital presence is your calling card</h1>
-    <br />
-    <h4>Proudly Servicing Central Florida</h4>
-    <br />
-    <p>Great digital media brings prospective renters and buyers directly to you. We understand this, which is why we use the highest quality cameras, retouching, and marketing-informed content for every project — no matter what. Led by award-winning digital media specialist Heaven Keller, Heaven's Lens finds success by helping you sell your listings more quickly, and for a higher price tag.</p>
-    <br />
-    <button type="button" class="btn btn-light btn-lg">Book Now</button>
-    <button type="button" class="btn btn-light btn-lg">Pricing & Services</button>
+<div class="jumbotron jumbotron-fluid">
+
+    <picture>
+        <source media="(min-width:800px)" srcset="./img/landscape_drove_shot.jpg">
+        <img src="./img/landscape_drove_shot.jpg" alt="Landscape Drone Photo" class="jumbotron__background img-fluid">
+    </picture>
+
+    <div class="container text-white text-center">
+        <h1 class="display-4">Your digital presence is your calling card</h1>
+        <p class="lead">Proudly Servicing Central Florida</p>
+        <p>Great digital media brings prospective renters and buyers directly to you. We understand this, which is why we use the highest quality cameras, retouching, and marketing-informed content for every project — no matter what. Led by award-winning digital media specialist Heaven Keller, Heaven's Lens finds success by helping you sell your listings more quickly, and for a higher price tag.</p>
+        <a class="btn btn-light btn-md" href="#" role="button">Book Now</a>
+        <a class="btn btn-light btn-md" href="#" role="button">Pricing & Services</a>
+    </div>
+    <!-- /.container -->
 </div>
 
 <br />
 
-<section id="page-cards">
+<div class="container" id="page-cards">
     <div id="link-cards">
-        <div class="card-group col">
-            <div class="card">
-                <img src="https://static.wixstatic.com/media/e54408_5d4254f6c0a444b8a71763073bfc94f4~mv2.jpg/v1/fill/w_280,h_260,fp_0.46_0.86,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_5d4254f6c0a444b8a71763073bfc94f4~mv2.jpg" class="card-img-top" alt="Just Sold Picture">
-                <div class="card-body text-center bg-secondary text-white">
-                    <h5 class="card-title">Graphic Design</h5>
-                    <button type="button" class="btn btn-outline-light">View More</button>
+        <div class="row">
+            <div class="card-group">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://static.wixstatic.com/media/e54408_5d4254f6c0a444b8a71763073bfc94f4~mv2.jpg/v1/fill/w_280,h_260,fp_0.46_0.86,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_5d4254f6c0a444b8a71763073bfc94f4~mv2.jpg" class="card-img-top" alt="Just Sold Picture">
+                        <div class="card-body text-center custom-link-card-bg text-white">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <button type="button" class="btn btn-outline-light">View More</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="https://static.wixstatic.com/media/e54408_a891dcc8f0d7450ebd7d03c99d7cfd02~mv2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_a891dcc8f0d7450ebd7d03c99d7cfd02~mv2.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center bg-secondary text-white">
-                    <h5 class="card-title">Photography</h5>
-                    <button type="button" class="btn btn-outline-light">View More</button>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://static.wixstatic.com/media/e54408_a891dcc8f0d7450ebd7d03c99d7cfd02~mv2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_a891dcc8f0d7450ebd7d03c99d7cfd02~mv2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center custom-link-card-bg text-white">
+                            <h5 class="card-title">Photography</h5>
+                            <button type="button" class="btn btn-outline-light">View More</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="https://static.wixstatic.com/media/nsplsh_41516c2d4a31396f635745~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/nsplsh_41516c2d4a31396f635745~mv2_d_3648_5472_s_4_2.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center bg-secondary text-white">
-                    <h5 class="card-title">Videography</h5>
-                    <button type="button" class="btn btn-outline-light">View More</button>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                    <img src="https://static.wixstatic.com/media/nsplsh_41516c2d4a31396f635745~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/nsplsh_41516c2d4a31396f635745~mv2_d_3648_5472_s_4_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center custom-link-card-bg text-white">
+                        <h5 class="card-title">Videography</h5>
+                        <button type="button" class="btn btn-outline-light">View More</button>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="https://static.wixstatic.com/media/e54408_f0baa458324042b89ffeb3f77eed4dca~mv2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_f0baa458324042b89ffeb3f77eed4dca~mv2.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center bg-secondary text-white">
-                    <h5 class="card-title">Aerial Media</h5>
-                    <button type="button" class="btn btn-outline-light">View More</button>
+                
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://static.wixstatic.com/media/e54408_f0baa458324042b89ffeb3f77eed4dca~mv2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_f0baa458324042b89ffeb3f77eed4dca~mv2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center custom-link-card-bg text-white">
+                            <h5 class="card-title">Aerial Media</h5>
+                            <button type="button" class="btn btn-outline-light">View More</button>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <br />
 
-<section>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="https://static.wixstatic.com/media/e54408_149ceb47840245e88af19c22772c6508~mv2.jpg/v1/fill/w_584,h_996,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e54408_149ceb47840245e88af19c22772c6508~mv2.jpg" alt="s.Drone_Work_Graded-3.jpg" style="width: 584px; height: 996px; object-fit: cover;" fetchpriority="high">
-            </div>
-            <div class="col-md-6">
+<section class="align">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid" src="./img/s.Drone_Work_Graded-3.jpg" alt="s.Drone_Work_Graded-3.jpg" fetchpriority="high">
+        </div>
+        <div class="col-md-6">
                 <h1>Our Guarauntee</h1>
                 <br />
                 <h2>Quality Without Compromise</h2>
@@ -73,15 +108,16 @@
                 <p>From thoughtfully curated photography to social media graphics, we offer a range of services to meet your needs. Allow us to simplify the process for you.</p>
                 <br />
                 <button type="button" class="btn btn-light btn-lg">Book Now</button>
-
-            </div>
-        </div>
+         </div>
     </div>
 </section>
 
 <br />
 
 <section id="social-media-statistics">
+    <div class="container text-center">
+        <h1>Did you know?</h1>
+    </div>
     <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
             <div class="card">
