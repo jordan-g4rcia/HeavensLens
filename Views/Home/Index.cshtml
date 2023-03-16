@@ -1,24 +1,6 @@
-﻿=@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-@*<header class="masthead">
-    <div class="container-fluid text-white">
-        <div class="row g-0">
-            <div class="text-center" id="intro">
-            <h1 class="display-5">Your digital presence is your calling card</h1>
-            <br />
-            <h4>Proudly Servicing Central Florida</h4>
-            <br />
-            <p>Great digital media brings prospective renters and buyers directly to you. We understand this, which is why we use the highest quality cameras, retouching, and marketing-informed content for every project — no matter what. Led by award-winning digital media specialist Heaven Keller, Heaven's Lens finds success by helping you sell your listings more quickly, and for a higher price tag.</p>
-            <br />
-            <button type="button" class="btn btn-light btn-lg">Book Now</button>
-            <button type="button" class="btn btn-light btn-lg">Pricing & Services</button>
-        </div>
-        </div>
-    </div>
-</header>
-*@
 
 <div class="jumbotron jumbotron-fluid">
 
@@ -28,11 +10,13 @@
     </picture>
 
     <div class="container text-white text-center">
-        <h1 class="display-4">Your digital presence is your calling card</h1>
-        <p class="lead">Proudly Servicing Central Florida</p>
-        <p>Great digital media brings prospective renters and buyers directly to you. We understand this, which is why we use the highest quality cameras, retouching, and marketing-informed content for every project — no matter what. Led by award-winning digital media specialist Heaven Keller, Heaven's Lens finds success by helping you sell your listings more quickly, and for a higher price tag.</p>
-        <a class="btn btn-light btn-md" href="#" role="button">Book Now</a>
-        <a class="btn btn-light btn-md" href="#" role="button">Pricing & Services</a>
+        <h1 class="banner-title">Your Digital Presence Is Your Calling Card</h1>
+        <p class="banner-text">Great digital media brings prospective renters and buyers directly to you. We understand this, which is why we use the highest quality cameras, retouching, and marketing-informed content for every project — no matter what. Led by award-winning digital media specialist Heaven Keller, Heaven's Lens finds success by helping you sell your listings more quickly, and for a higher price tag.</p>
+        <div class="">
+            <a class="btn btn-light btn-md banner-button" href="#" role="button">Book Now</a>
+            <a class="btn btn-light btn-md banner-button" href="#" role="button">Pricing & Services</a>
+        </div>
+        
     </div>
     <!-- /.container -->
 </div>
@@ -44,8 +28,8 @@
         <div class="row">
             <div class="card-group">
                 <div class="col-md-3">
-                    <div class="card"> <!--width 280 height 260 for each image-->
-                        <img src="./img/just_sold.jpg" class="card-img-top" alt="Just Sold Picture">
+                    <div class="card">
+                        <img id="service-card-image" src="./img/just_sold.jpg" class="card-img-top" alt="Just Sold Picture">
                         <div class="card-body text-center custom-link-card-bg text-white">
                             <h5 class="card-title">Graphic Design</h5>
                             <button type="button" class="btn btn-outline-light">View More</button>
@@ -54,7 +38,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://static.wixstatic.com/media/e54408_a891dcc8f0d7450ebd7d03c99d7cfd02~mv2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_a891dcc8f0d7450ebd7d03c99d7cfd02~mv2.jpg" class="card-img-top" alt="...">
+                        <img id="service-card-image" src="./img/thumbnail3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center custom-link-card-bg text-white">
                             <h5 class="card-title">Photography</h5>
                             <button type="button" class="btn btn-outline-light">View More</button>
@@ -63,16 +47,16 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                    <img src="https://static.wixstatic.com/media/nsplsh_41516c2d4a31396f635745~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/nsplsh_41516c2d4a31396f635745~mv2_d_3648_5472_s_4_2.jpg" class="card-img-top" alt="...">
+                        <img id="service-card-image" src="./img/thumbnail2.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center custom-link-card-bg text-white">
-                        <h5 class="card-title">Videography</h5>
-                        <button type="button" class="btn btn-outline-light">View More</button>
-                    </div>
+                            <h5 class="card-title">Videography</h5>
+                            <button type="button" class="btn btn-outline-light">View More</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://static.wixstatic.com/media/e54408_f0baa458324042b89ffeb3f77eed4dca~mv2.jpg/v1/fill/w_280,h_260,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/e54408_f0baa458324042b89ffeb3f77eed4dca~mv2.jpg" class="card-img-top" alt="...">
+                        <img id="service-card-image" src="./img/thumbnail1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center custom-link-card-bg text-white">
                             <h5 class="card-title">Aerial Media</h5>
                             <button type="button" class="btn btn-outline-light">View More</button>
@@ -92,7 +76,7 @@
         <div class="col-md-6">
             <img class="img-fluid" src="./img/s.Drone_Work_Graded-3.jpg" alt="s.Drone_Work_Graded-3.jpg" fetchpriority="high">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 container-fluid">
                 <h1>Our Guarauntee</h1>
                 <br />
                 <h2>Quality Without Compromise</h2>
@@ -113,7 +97,7 @@
 
 <section id="social-media-statistics">
     <div class="container text-center">
-        <h1 id="section-title">Did you know?</h1>
+        <h1 id="section-header">Did you know?</h1>
     </div>
     <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
@@ -160,28 +144,28 @@
     <div class="container text-center">
         <div class="row row-cols-3">
             <div class="col">
-                <h4></h4>
-
+                <h4 id="faq-title">What is your cancellation policy?</h4>
+                <p>We understand that life can be unpredictable. If you need to make any changes to your photoshoot schedule, simply let us know before 5:00 PM the day before your shoot. If you need to cancel or reschedule after this time, a fee of 25% (excluding any discounts or travel fees) will apply.</p>
             </div>
             <div class="col">
-                Column
-
+                <h4 id="faq-title">Do I need to be present during the shoot?</h4>
+                <p class="faq-text">With our streamlined process, you don't even need to be on the property during the photoshoot. Simply provide us with access and we'll handle the rest. If you'd like to include any special requests or instructions, you can easily add them to your online order before the photoshoot.</p>
             </div>
             <div class="col">
-                Column
-
+                <h4 id="faq-title">How should I prepare for our session?</h4>
+                <p class="faq-text">We want the property to look its best just as much as you do! We send you a pre-shoot checklist that provides helpful tips for you and your homeowner.</p>
             </div>
             <div class="col">
-                Column
-
+                <h4 id="faq-title">How long will the photo session take?</h4>
+                <p class="faq-text">The time needed for a property photoshoot varies based on its size. Generally, plan for 1 hour, but larger properties may require more time. The exact time will be discussed at booking.</p>
             </div>
             <div class="col">
-                Column
-
+                <h4 id="faq-title">What type of equipment do you use?</h4>
+                <p class="faq-text">We use the Sony A7Riii, a commercial-grade full-frame digital HDR camera with high resolution and lenses and durable tripods that allow us to capture any building from any perspective. Aerial media is captured with the DJI Mavic 2 Zoom, and is shot in 4k at 60fps.</p>
             </div>
             <div class="col">
-                Column
-
+                <h4 id="faq-title">What editing can I expect?</h4>
+                <p class="faq-text">With careful multi-exposure blending in Photoshop, we try to keep the original colors and add blue sky to all windows and exterior photos. Additional editing services are available for an extra $15 per photo. These include object removal, grass patching, fireplace fire addition, TV graphics, and more.</p>
             </div>
         </div>
     </div>
