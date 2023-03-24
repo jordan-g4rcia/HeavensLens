@@ -40,6 +40,14 @@ h1, h2, h3, h4, h5 {
     padding: 50px;
 }
 
+.about-me {
+    background-color: #7a7572;
+}
+
+.about-section {
+    background-color: #f2edea;
+}
+
 .banner-text {
     margin-left: 120px;
     margin-right: 120px;
