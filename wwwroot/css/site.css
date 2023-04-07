@@ -40,12 +40,17 @@ h1, h2, h3, h4, h5 {
     padding: 50px;
 }
 
-.about-me {
+.about-me-bg {
     background-color: #7a7572;
 }
 
 .about-section {
     background-color: #f2edea;
+    /*padding: 60px;*/
+    max-width: 460px;
+    max-height: 750px;
+    /*margin: 50px;*/
+    /*margin-top: 150px;*/
 }
 
 .banner-text {
@@ -54,6 +59,12 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 50px;
     margin-top: 20px;
 }
+
+/*.bio-picture {
+    max-width: 590px;
+    max-height: 880px;
+    margin: 50px;
+}*/
 
 .custom-link-card-bg {
     background-color: #62605f;
