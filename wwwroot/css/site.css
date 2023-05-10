@@ -44,13 +44,26 @@ h1, h2, h3, h4, h5 {
     background-color: #7a7572;
 }
 
+.about-me .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-section {
     background-color: #f2edea;
-    /*padding: 60px;*/
-    max-width: 460px;
-    max-height: 750px;
-    /*margin: 50px;*/
-    /*margin-top: 150px;*/
+    /*max-width: 460px;
+    max-height: 750px;*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section,
+.bio-picture-container {
+    height: 75%;
 }
 
 .banner-text {
@@ -60,11 +73,17 @@ h1, h2, h3, h4, h5 {
     margin-top: 20px;
 }
 
-/*.bio-picture {
-    max-width: 590px;
-    max-height: 880px;
-    margin: 50px;
-}*/
+.bio-picture {
+    max-width: 460px;
+    max-height: 750px;
+}
+
+.bio-picture-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .custom-link-card-bg {
     background-color: #62605f;
